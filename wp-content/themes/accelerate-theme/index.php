@@ -15,7 +15,8 @@
  */
 
 get_header(); ?>
-	<!-- BLOG PAGE -->
+<pre><?php print_r($wp_query); exit; ?></pre>
+<!-- BLOG PAGE -->
 	<section class="index-page">
 		<div class="site-content">
 			<div class="main-content">
