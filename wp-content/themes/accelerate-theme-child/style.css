@@ -14,11 +14,11 @@ Text Domain:  accelerate-theme-child
 }
 
 #masthead {
-  background: none repeat scroll 0 0 #7a7a53;
+  background: none repeat scroll 0 0 #45ac9d;
 }
 
 .button {
-    background: none repeat scroll 0 0 #7a7a53;
+    background: none repeat scroll 0 0 #45ac9d;
 }
 .blog-post {
     width: 50%;
@@ -27,7 +27,7 @@ Text Domain:  accelerate-theme-child
 }
 .blog-post h4 {
     font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
-    color: #a6a6a6;
+    color: #45ac9d;
     text-transform: uppercase;
     margin: 2em 0 .5em;
 }
