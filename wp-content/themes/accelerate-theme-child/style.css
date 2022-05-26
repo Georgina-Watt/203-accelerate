@@ -31,3 +31,23 @@ Text Domain:  accelerate-theme-child
     text-transform: uppercase;
     margin: 2em 0 .5em;
 }
+/*Case Studie styles */
+
+aside.case-study-sidebar {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    width: 30%;
+    margin: 0 6% 0 0;
+
+}
+div.case-study-images {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    margin-top: 3em;
+    width: 60%;
+    
+
+}
+
