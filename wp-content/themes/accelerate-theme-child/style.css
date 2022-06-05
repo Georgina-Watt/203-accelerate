@@ -31,23 +31,61 @@ Text Domain:  accelerate-theme-child
     text-transform: uppercase;
     margin: 2em 0 .5em;
 }
-/*Case Studie styles */
+/*Case Studie styles (Blog) */
 
 aside.case-study-sidebar {
     display: flex;
     flex-direction: column;
     float: left;
     width: 30%;
-    margin: 0 6% 0 0;
 
 }
-div.case-study-images {
+.case-study-images div {
     display: flex;
     flex-direction: column;
-    float: right;
-    margin-top: 3em;
-    width: 60%;
-    
-
+    padding-bottom: 3em;
+    width: 30%;
 }
+
+.aside site-link  {
+    color: #45ab9d;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: left;
+}
+div.case-study-images img {
+    width: 100%;
+    height: auto;
+}
+
+/*Front Home Page Styles */
+.site-content h4 {
+    text-align: center;
+}
+
+.individual-featured-work{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 10px;
+    width: 33%;
+}
+.homepage-featured-work{
+    display: flex;
+    flex-direction: row;
+}
+.site-content a {
+    justify-content: left;
+    text-align: left;
+    color: #44a5a5;
+}
+.blog-post h4 {
+    color: #a5a5a5;
+    text-align: left;
+}
+.span {
+   color: #45ab9d;
+   text-transform: uppercase;
+}
+/*Case Studies Archive */
 
