@@ -59,36 +59,65 @@ div.case-study-images img {
 }
 
 /*Front Home Page Styles */
-.site-content h4 {
-    text-align: center;
-}
 
-.individual-featured-work{
+
+
+li.individual-featured-work  {
     display: flex;
     flex-direction: column;
+    float: left;
     margin: 0;
-    padding: 10px;
+    padding: 2em;
     width: 33%;
 }
-.homepage-featured-work{
-    display: flex;
-    flex-direction: row;
+
+li.individual-featured-work h3 {
+    font-size: 16px;
+    text-align: center;
+    font-weight: 400;
 }
-.site-content a {
-    justify-content: left;
-    text-align: left;
-    color: #44a5a5;
+.site-content h4 {
+    color: #393939;
+    text-align: center;
+    text-transform: uppercase;
+
 }
 .blog-post h4 {
     color: #a5a5a5;
     text-align: left;
 }
-.span {
+.read-more-link {
    color: #45ab9d;
    text-transform: uppercase;
 }
 /*Case Studies Archive */
 
+/*Contact Form */
+
+.ninja-forms-field {
+    display: block;
+}
+#nf-label-field-1, #nf-label-field-2, #nf-label-field-3 {
+    font-size: 1em;
+    font-weight: 400;
+}
+
+#nf-field-1-wrap, #nf-field-2-wrap {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0;
+
+}
+
+#nf-field-4 {
+background-color: #45ac9d;
+float: right;
+font-size: 1.125em;
+height: 55px;
+text-align: center;
+width: 20%;
+}
 /* -- Footer--*/
 
 .social-media-navigation {
@@ -121,4 +150,5 @@ div.case-study-images img {
   color: #ffff;
   background: none;
 }
+
 
