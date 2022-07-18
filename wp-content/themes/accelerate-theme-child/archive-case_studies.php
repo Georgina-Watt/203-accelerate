@@ -15,13 +15,12 @@
 
 get_header(); ?>
 
-	<div id="primary" class="site-content sidebar">
+	<div id="primary" class="site-content">
 		<div class="main-content" role="main">
 			<?php while ( have_posts() ) : the_post(); 
 					$image_1 = get_field("image_1");
-					$size = "medium";
+					$size = "small";
 					$services = get_field('services');
-
 			?>
 
 	<article class="case-study">
@@ -31,7 +30,7 @@ get_header(); ?>
 
             		<?php the_excerpt(); ?>
             		
-            	<p><span class="site-link"><a href="<?php the_permalink(); ?>">View Project</a></span></p>
+            	<p><a class="site-link"><a href="<?php the_permalink(); ?>" class="read-more-link">View Project &rsaquo;</a></p>
             </aside>
 
         <div class="case-study-images">
