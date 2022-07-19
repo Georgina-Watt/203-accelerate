@@ -26,22 +26,25 @@ Text Domain:  accelerate-theme-child
     flex-wrap: nowrap;
 }
 .blog-post {
-    width: 50%;
+    width: 40%;
     float: left;
-    margin-bottom: 2em;
+    margin: 1em 4em 2em 1em;
 }
 .blog-post h4 {
-    font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
-    color: #45ac9d;
     text-transform: uppercase;
     margin: 2em 0 .5em;
 }
+ .follow-us-link {
+    color: #45ab9d;
+    text-transform: uppercase;
+}
+
 /*Case Studie Archive */
 
 .case-study {
     display: flex;
     flex-direction: column;
-    align-content: flex-start;
+    align-content: flex-end;
 }
 .case-study h5, p {
     display: flex;

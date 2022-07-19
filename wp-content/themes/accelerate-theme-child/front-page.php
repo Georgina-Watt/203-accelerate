@@ -36,20 +36,21 @@ get_header(); ?>
             ?>
 
             <li class="individual-featured-work">
-                <figure>
-                    <?php echo wp_get_attachment_image($image_1, $size); ?>
-                </figure>
-                    <h3> <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+                <a href="<?php the_permalink(); ?>">
+                    <figure>
+                        <?php echo wp_get_attachment_image( $image_1, $size ); ?>
+                    </figure>
+                        <h3><?php the_title(); ?></h3>
+                </a>
             </li>
-        <?php endwhile; ?> 
-        <?php wp_reset_query(); ?>
-    </ul>
-    </div>
+                <?php endwhile; ?> 
+                <?php wp_reset_query(); ?>
+            </ul>
+        </div>
     </section>
 
     <!--Recent Blog Posts-->
         <section class="recent-posts">
-            <div class="site-content">
                 <div class="blog-post">
                     <h4>From the Blog</h4>
                          <?php query_posts('posts_per_page=1'); ?>
@@ -58,20 +59,20 @@ get_header(); ?>
                     <?php the_excerpt(); ?> 
                     <?php endwhile; ?> 
                 <?php wp_reset_query(); ?>
-            </div>
-        </section>
+            </div> <!--blog-post-->
+        </section> <!--recent-posts-->
 
 <!--Recent Tweets-->
-<section class="tweet">
-    <h3>Recent Tweet</h3>
-        <?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
-            <div id="secondary" class="widget-area" role="complementary">
-                <?php dynamic_sidebar( 'sidebar-2' ); ?>
-            </div>
-        <?php endif; ?>
-    
-
-
+<section class="recent-tweet">
+    <div class="tweet">
+        <h4>Recent Tweet</h4>
+            <?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
+                    <div id="secondary" class="widget-area" role="complementary">
+                    <?php dynamic_sidebar( 'sidebar-2' ); ?>
+                </div> <!--tweet-->
+            <?php endif; ?>
+        </div> <!--recent-tweet-->
 </section>
+
         
 <?php get_footer(); ?>
