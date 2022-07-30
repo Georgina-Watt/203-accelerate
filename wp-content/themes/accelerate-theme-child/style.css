@@ -25,71 +25,130 @@ Text Domain:  accelerate-theme-child
     width: 4em;
     flex-wrap: nowrap;
 }
-.blog-post {
-    width: 40%;
-    float: left;
-    margin: 1em 4em 2em 1em;
+.home-page-hero-content h1, h3 {
+    color: #d8d9d9;
+    line-height: 1;
+    padding-bottom: 0.5em;
 }
-.blog-post h4 {
+.home-page-hero-content {
+    margin: 0;
+    padding-top: 0;
+}
+/*Front Home Page Featured Work Styles */
+
+.featured-work h4 {
+    text-align: center;
     text-transform: uppercase;
-    margin: 2em 0 .5em;
+}
+.individual-featured-work  {
+    display: flex;
+    flex-direction: row;
+    float: left;
+    margin: 0;
+    padding: 2em;
+    width: 33%;
+}
+.individual-featured-work h3 {
+    font-size: 16px;
+    text-align: center;
+    font-weight: 500;
+    color:#3b3b3b;
+}
+.blog-post h3 {
+    color: #3b3b3b;
+}
+.read-more-link {
+   color: #45ab9d;
+   text-transform: uppercase;
+}
+.recent-posts {
+    float: left;
+    width: 40%;
+    padding-left: 3em ;
+}
+.recent-posts h4 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #a6a6a6;
+    text-align: left;
+}
+.recent-tweet h4 {
+    color: #a6a6a6;
+    text-transform: uppercase;
+}
+
+/*Dynamic Side Bar */
+.recent-tweet {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    width: 33%;
 }
  .follow-us-link {
     color: #45ab9d;
     text-transform: uppercase;
 }
 
-/*Case Studie Archive */
+/* Archive Case Studies */
 
-.case-study {
+.case-study  {
+    clear: both;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 1em 0;
+}
+.case-study-sidebar {
+    float: left;
     display: flex;
     flex-direction: column;
-    align-content: flex-end;
-}
-.case-study h5, p {
-    display: flex;
-    float: left;
-
-}
-.case-study-images img {
-    float: right;
-    width: 50%;
-    height: auto;
-}
-
-/*Front Home Page Styles */
-
-li.individual-featured-work  {
-    display: flex;
-    flex-direction: column;
-    float: left;
-    margin: 0;
-    padding: 2em;
-    width: 33%;
-}
-
-li.individual-featured-work h3 {
-    font-size: 16px;
-    text-align: center;
-    font-weight: 400;
-}
-.site-content h4 {
-    color: #393939;
-    text-align: center;
-    text-transform: uppercase;
-
-}
-.blog-post h4 {
-    color: #a5a5a5;
     text-align: left;
-}
-.read-more-link {
-   color: #45ab9d;
-   text-transform: uppercase;
+    width: 39%;
+    padding: 1em 2em 4em 2em;
 }
 
-   /*About Page Styles */
+.case-study-sidebar h5 {
+    font-size: 0.625em;
+}
+.case-study-sidebar strong {
+    color: #45ab9d;
+    font-size: 0.725em;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+.case-study-sidebar h3 {
+    font-weight: lighter;    
+    color: #3b3b3b;
+}
+.case-study-images {
+    align-content: center;
+    float: right;
+    flex-wrap: nowrap;
+}
+/*Single Case Studies*/
+article.case-study {
+    clear: both;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 1em 0;
+}
+aside.case-study-sidebar {
+    float: left;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 39%;
+    padding: 1em 2em 4em 2em;
+}
+article.case-study-images {
+    align-content: center;
+    float: right;
+    flex-wrap: nowrap;
+    margin: 0;
+}
 
+/*About */
 #masthead {
     height: 3.5em;
 }
@@ -161,8 +220,17 @@ height: 55px;
 text-align: center;
 width: 20%;
 }
-/* -- Footer--*/
+/*--Newsletter Sign up-- */
+.mc4wp-form-fields  input  {
+    background: #45ac9d;
+    color: #ffff;
+    height: 1.5em;
+    justify-content: center;
+    text-align: center;
+    margin-top: 1;
+}
 
+/* -- Footer--*/
 .social-media-navigation {
     width: 100%;
 }

@@ -20,6 +20,7 @@ function accelerate_child_scripts(){
     wp_enqueue_style( 'accelerate-child-theme-google-fonts', ('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&display=swap'));
 }
 add_action( 'wp_enqueue_scripts', 'accelerate_child_scripts' );
+
 //Custom post types function 
 function create_custom_post_types() {
 	//create a case study custom post
@@ -37,6 +38,7 @@ function create_custom_post_types() {
 }
 add_action( 'init', 'create_custom_post_types' ); 
 
+// dynamic sidebar 
  function accelerate_theme_child_widget_init() {
     
     register_sidebar( array(

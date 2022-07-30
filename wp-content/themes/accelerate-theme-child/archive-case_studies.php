@@ -17,20 +17,20 @@ get_header(); ?>
 
 	<div id="primary" class="site-content">
 		<div class="main-content" role="main">
-			<?php while ( have_posts() ) : the_post(); 
+			<?php while ( have_posts() ) : the_post();
+				$services = get_field("services");
+					$client = get_field("client");
+					$link = get_field("site_link"); 
 					$image_1 = get_field("image_1");
-					$size = "small";
-					$services = get_field('services');
+					$size = "full";	
 			?>
 
 	<article class="case-study">
             <aside class= "case-study-sidebar">
-               		<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></h2>
+               		<h3><?php the_title(); ?></h3>
                 	<h5><?php echo $services; ?></h5>
-
             		<?php the_excerpt(); ?>
-            		
-            	<p><a class="site-link"><a href="<?php the_permalink(); ?>" class="read-more-link">View Project &rsaquo;</a></p>
+            	<link><strong><a href="<?php the_permalink(); ?>">View Project &rsaquo;</a></link>
             </aside>
 
         <div class="case-study-images">
@@ -40,7 +40,6 @@ get_header(); ?>
              	} ?>
          	</a>
         </div>
-
 	  </article>	
 	<?php endwhile; // end of the loop. ?>
 		

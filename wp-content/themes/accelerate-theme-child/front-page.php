@@ -25,7 +25,7 @@ get_header(); ?>
 
     <!--Featured Work -->
     <section class="featured-work"> 
-    <div class="site-content">
+    <div class="site-content clearfix">
             <h4>Featured Work</h4>
 
         <ul class="homepage-featured-work">
@@ -63,16 +63,22 @@ get_header(); ?>
         </section> <!--recent-posts-->
 
 <!--Recent Tweets-->
-<section class="recent-tweet">
-    <div class="tweet">
-        <h4>Recent Tweet</h4>
-            <?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
+    <section class="recent-tweet">
+        <div class="tweet">
+            <h4>Recent Tweet</h4>
+                <?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
                     <div id="secondary" class="widget-area" role="complementary">
                     <?php dynamic_sidebar( 'sidebar-2' ); ?>
                 </div> <!--tweet-->
             <?php endif; ?>
         </div> <!--recent-tweet-->
-</section>
+        
+        <div class="read-more-link">
+            <a href="<?php echo home_url(); ?>//twitter.com/GeorginaK34">
+                <span>Follow Us</span> &rsaquo; 
+            </a> 
+        </div>
+    </section>
 
         
 <?php get_footer(); ?>
